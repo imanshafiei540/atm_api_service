@@ -20,3 +20,6 @@ class GeometryQueryHandler:
         db.session.commit()
 
         return new_geometry.as_dict()
+    
+    def find_one(self, id):
+        return BaseGeometry.query.filter_by(id=id).one().as_dict()
