@@ -1,4 +1,5 @@
-from app import db, ATMDevice
+from app import db
+from models.atm_device import ATMDevice
 from constants import GLOBAL_PAGINATION_PER_PAGE_NUMBER
 
 

@@ -7,7 +7,7 @@ from constants import HTTP_STATUS_CREATED
 
 atm_parser = ATMRequestParser().get_parser()
 geometry_parser = GeometryParser().get_parser()
-atm_list_parser = GeometryParser().get_parser()
+atm_list_parser = ATMListParser().get_parser()
 
 
 class ATMListEndpoint(Resource):

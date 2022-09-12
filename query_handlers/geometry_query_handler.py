@@ -1,4 +1,5 @@
-from app import db, BaseGeometry
+from app import db
+from models.base_geometry import BaseGeometry
 from manager_classes.geometry_manager import GeometryManager
 
 
