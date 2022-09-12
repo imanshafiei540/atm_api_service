@@ -40,3 +40,12 @@
 ## For creating tables in the Database
 
 `flask db upgrade`
+
+## Create a virtual environment and activate it
+
+`python3 -m venv .venv`
+
+## for installing dependencies
+
+`pip install --upgrade pip`
+`pip install -r requirements.txt`
