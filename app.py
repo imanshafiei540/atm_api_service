@@ -15,5 +15,7 @@ migrate = Migrate(app, db)
 from apis import api
 api.init_app(app)
 
+# Run the server with flask run command and not python app.py
+# TODO: Fix circular import error when running python app.py command
 if "__main__" == __name__:
     app.run()

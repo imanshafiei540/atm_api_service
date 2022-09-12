@@ -49,3 +49,20 @@
 
 `pip install --upgrade pip`
 `pip install -r requirements.txt`
+
+## For running the server in dev environment
+
+`flask run`
+
+## For running with gunicorn
+
+`gunicorn --bind 0.0.0.0:5000 wsgi:app`
+
+You can use systemd to serve the wsgi file of this service in any server (Linux).
+
+## TODO:
+- Containerize the service
+- Decouple database from main service
+- Using RDS for Database
+- Authentication/Authorization
+- Using EC2 or (AWS API gateway and AWS lambda) to serve the API
