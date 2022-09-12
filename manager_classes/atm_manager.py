@@ -10,3 +10,5 @@ class ATMManager:
         new_geometry = GeometryQueryHandler().insert(geometry_args=geometry_args)
         atm_args["geometry_id"] = new_geometry.get("id")
         new_atm = ATMQueryHandler().insert(atm_args=atm_args)
+        new_atm["geometry"] = new_geometry
+        return new_atm
