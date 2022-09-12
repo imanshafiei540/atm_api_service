@@ -9,5 +9,5 @@ app.config.from_object(Config)
 db = SQLAlchemy(app)
 
 
-if '__main__' == __name__:
+if "__main__" == __name__:
     app.run()
