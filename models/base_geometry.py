@@ -10,3 +10,6 @@ class BaseGeometry(db.Model):
     coordinates = db.Column(ARRAY(db.Float))
     geometry_coordinates = db.Column(Geometry(geometry_type="GEOMETRY", srid=4326))
     atm_device = db.relationship("ATMDevice", backref="base_geometries", uselist=False)
+
+    def as_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
