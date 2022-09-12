@@ -31,3 +31,12 @@
 - Sometimes you need to change the owner of postgis table to your user
 
 `ALTER TABLE spatial_ref_sys OWNER TO atm_service_user;`
+
+## Creating .env file
+
+- Copy .env.sample file and rename it to .env
+- Replace the variables with your settings
+
+## For creating tables in the Database
+
+`flask db upgrade`
