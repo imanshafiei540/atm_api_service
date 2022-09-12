@@ -19,4 +19,4 @@ class GeometryQueryHandler:
         db.session.add(new_geometry)
         db.session.commit()
 
-        return new_geometry
+        return new_geometry.as_dict()

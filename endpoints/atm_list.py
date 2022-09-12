@@ -1,6 +1,7 @@
 from flask_restful import Resource
 from request_parsers.atm_parser import ATMRequestParser
 from request_parsers.geometry_parser import GeometryParser
+from manager_classes.atm_manager import ATMManager
 
 
 atm_parser = ATMRequestParser().get_parser()
