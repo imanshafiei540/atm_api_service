@@ -13,7 +13,7 @@ class ATMListEndpoint(Resource):
     
     def post(self):
         atm_args = atm_parser.parse_args()
-        geometry_args = atm_parser.parse_args(req=atm_args)
+        geometry_args = geometry_parser.parse_args(req=atm_args)
         new_atm = ATMManager().create_atm(atm_args, geometry_args)
 
         return new_atm, HTTP_STATUS_CREATED

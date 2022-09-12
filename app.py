@@ -15,5 +15,8 @@ from models.atm_device import ATMDevice
 from models.base_geometry import BaseGeometry
 migrate = Migrate(app, db)
 
+from apis import api
+api.init_app(app)
+
 if "__main__" == __name__:
     app.run()
