@@ -66,3 +66,14 @@ You can use systemd to serve the wsgi file of this service in any server (Linux)
 - Using RDS for Database
 - Authentication/Authorization
 - Using EC2 or (AWS API gateway and AWS lambda) to serve the API
+
+## Test data for POST
+
+{
+  "address": "5426 HelloWorld Rd.",
+  "provider": "WHO ATM",
+  "geometry": {
+    "type": "POINT",
+    "coordinates": [-123.0597096, 49.2931366]
+  }
+}
